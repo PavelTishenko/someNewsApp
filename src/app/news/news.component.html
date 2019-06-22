@@ -1,0 +1,15 @@
+<div>
+  <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+<div class="option">
+  <select name="chosenOne" [(ngModel)]="chosenCntry" >
+    <option *ngFor="let country of countryData">{{country}}</option>
+  </select>
+  <button (click)="show()">Show news</button>
+</div>
+<div *ngFor="let news of allNews" class="info">
+    <h3>{{news.source.name}}</h3>
+    <p>{{news.description}}<br/> <img class="images" [src]="news.urlToImage"></p>
+    <p>{{news.publishedAt}}</p>
+    <a href="{{news.url}}" class="btn">Read more</a>
+</div>
+</div>
