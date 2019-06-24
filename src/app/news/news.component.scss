@@ -11,15 +11,24 @@
 }
 .btn{
   height: 20px;
+  width: 80px;
   background-color: brown;
   color: black;
   text-decoration: none;
   padding: 4px 4px 4px 4px;
+  border-radius: 5px;
+  position: relative;
+}
+.btn-span{
+  position: absolute;
+  left: 3px;
+  bottom: -1px;
 }
 
+
 .info{
-  background-color: white;
   width: 50%;
   margin: auto;
   border-radius: 2px 2px;
+  background: white linear-gradient(to top left, #0E101C, #0E101C, #37476B, #37476B);
 }

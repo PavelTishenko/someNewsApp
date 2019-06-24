@@ -14,7 +14,7 @@ export class NewsComponent implements OnInit {
   width = 100;
   height = 100;
   allNews;
-  countryData: string[] = ['us', 'ua', 'de', 'it'];
+  countryData: string[] = ['us', 'ua', 'de', 'it', 'gb'];
   chosenCntry;
   constructor(private getNews: HttpService) { }
 
@@ -37,14 +37,19 @@ export class NewsComponent implements OnInit {
             value: 200,
           },
           color: {
-            value: '#ff0000'
+            value: '#37476B'
           },
           shape: {
-            type: 'triangle',
+            type: 'circle',
           },
           size: {
             value: 6,
             random: true,
+          },
+          line_linked: {
+            enable_auto: true,
+            distance: 150,
+            color: '#37476B'
           }
         }
       };

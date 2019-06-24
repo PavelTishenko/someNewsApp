@@ -4,7 +4,7 @@
   <select name="chosenOne" [(ngModel)]="chosenCntry" >
     <option *ngFor="let country of countryData">{{country}}</option>
   </select>
-  <button (click)="show()">Show news</button>
+  <button class="btn" (click)="show()"><span class="btn-span">Show news</span></button>
 </div>
 <div *ngFor="let news of allNews" class="info">
     <h3>{{news.source.name}}</h3>
